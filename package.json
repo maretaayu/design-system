@@ -2,6 +2,10 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -17,6 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "tsc": "rimraf dist && tsc",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
