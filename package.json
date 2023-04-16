@@ -1,11 +1,7 @@
 {
-  "name": "design-system",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -21,13 +17,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "tsc": "rimraf dist && tsc",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
@@ -58,18 +53,17 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^7.0.5",
     "@storybook/addon-essentials": "^7.0.5",
     "@storybook/addon-interactions": "^7.0.5",
     "@storybook/addon-links": "^7.0.5",
-    "@storybook/builder-webpack5": "^7.0.5",
-    "@storybook/manager-webpack5": "^6.5.16",
-    "@storybook/node-logger": "^7.0.5",
+    "@storybook/blocks": "^7.0.5",
     "@storybook/preset-create-react-app": "^7.0.5",
     "@storybook/react": "^7.0.5",
-    "@storybook/testing-library": "^0.1.0",
+    "@storybook/react-webpack5": "^7.0.5",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
+    "storybook": "^7.0.5",
     "tailwindcss": "^3.3.1",
     "webpack": "^5.79.0"
   }
